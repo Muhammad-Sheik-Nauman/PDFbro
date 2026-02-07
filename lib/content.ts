@@ -143,28 +143,7 @@ export const seoContent = {
       ],
       metaTitle: "Delete PDF Pages Online Free - Remove Pages from PDF | PDF Bro",
       metaDescription: "Delete pages from PDF online free. Remove unwanted pages quickly. Visual page selector, no quality loss. Fast and secure PDF page deletion.",
-    },
-
-    unlockPdf: {
-      title: "Unlock PDF - Remove Password Protection Online Free",
-      slug: "unlock-pdf",
-      h1: "Unlock PDF Online - Remove Password Protection",
-      description: "Remove password protection from PDF files quickly and securely. Our free PDF unlocker lets you decrypt password-protected PDFs instantly. Enter the password and get an unlocked PDF with no restrictions. 100% secure and private.",
-      benefits: [
-        "Remove password protection instantly",
-        "100% secure - local processing only",
-        "No file uploaded to servers",
-        "Works with owner and user passwords",
-        "Fast unlock in seconds"
-      ],
-      howItWorks: [
-        "Upload your password-protected PDF",
-        "Enter the PDF password",
-        "Download your unlocked PDF"
-      ],
-      metaTitle: "Unlock PDF Online Free - Remove PDF Password | PDF Bro",
-      metaDescription: "Unlock password-protected PDFs online free. Remove PDF password restrictions securely. Fast, private PDF decryption in your browser. No upload required.",
-    },
+      },
   },
 
   faqs: [
