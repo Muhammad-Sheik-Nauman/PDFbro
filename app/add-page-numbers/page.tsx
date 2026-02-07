@@ -12,14 +12,14 @@ const tool = seoContent.tools.addPageNumbers;
 
 export const metadata: Metadata = {
   title: tool.metaTitle,
-  description: tool.metaDescription,
-  keywords: "add page numbers to PDF, PDF page numbering, number PDF pages, PDF page numbers online, add page numbers free, PDF numbering tool",
+  description: "Add page numbers to PDF online free. Professional PDF page numbering for business, school, and personal use. Find PDF tools for any document task.",
+  keywords: "add page numbers, PDF page numbering, number PDF pages, PDF tools, online PDF tools, document management, business PDF, school PDF, personal PDF, free PDF tools, PDF organization",
   alternates: {
     canonical: `https://pdfbro.me/${tool.slug}`,
   },
   openGraph: {
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Add page numbers to PDF online free. Professional PDF page numbering for business, school, and personal use. Find PDF tools for any document task.",
     url: `https://pdfbro.me/${tool.slug}`,
     type: 'website',
     siteName: 'PDF Bro',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Add page numbers to PDF online free. Professional PDF page numbering for business, school, and personal use. Find PDF tools for any document task.",
   },
   robots: {
     index: true,

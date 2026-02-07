@@ -11,14 +11,14 @@ const tool = seoContent.tools.compressPdf;
 
 export const metadata: Metadata = {
   title: tool.metaTitle,
-  description: tool.metaDescription,
-  keywords: "compress PDF, reduce PDF size, PDF compressor online free, shrink PDF, make PDF smaller, PDF file size reducer",
+  description: "Compress PDF files online free. Reduce PDF file size, optimize documents, and manage PDFs. Best PDF compressor for business, school, and personal use. Find PDF tools for any document task.",
+  keywords: "compress PDF, reduce PDF size, PDF compressor online free, shrink PDF, make PDF smaller, PDF file size reducer, PDF tools, online PDF tools, document optimization, business PDF, school PDF, personal PDF, free PDF tools, PDF management",
   alternates: {
     canonical: `https://pdfbro.me/${tool.slug}`,
   },
   openGraph: {
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Compress PDF files online free. Reduce PDF file size, optimize documents, and manage PDFs. Best PDF compressor for business, school, and personal use. Find PDF tools for any document task.",
     url: `https://pdfbro.me/${tool.slug}`,
     type: 'website',
     siteName: 'PDF Bro',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Compress PDF files online free. Reduce PDF file size, optimize documents, and manage PDFs. Best PDF compressor for business, school, and personal use. Find PDF tools for any document task.",
   },
   robots: {
     index: true,

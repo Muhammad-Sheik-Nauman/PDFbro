@@ -11,14 +11,14 @@ const tool = seoContent.tools.rotatePdf;
 
 export const metadata: Metadata = {
   title: tool.metaTitle,
-  description: tool.metaDescription,
-  keywords: "rotate PDF online, fix PDF orientation, rotate PDF pages, PDF rotation tool, flip PDF pages, change PDF orientation",
+  description: "Rotate PDF pages online free. Fix, flip, and organize PDF page orientation. Best PDF rotation tool for business, school, and personal use. Find PDF tools for any document task.",
+  keywords: "rotate PDF, fix PDF orientation, flip PDF pages, PDF rotation tool, PDF tools, online PDF tools, document management, business PDF, school PDF, personal PDF, free PDF tools, PDF organization",
   alternates: {
     canonical: `https://pdfbro.me/${tool.slug}`,
   },
   openGraph: {
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Rotate PDF pages online free. Fix, flip, and organize PDF page orientation. Best PDF rotation tool for business, school, and personal use. Find PDF tools for any document task.",
     url: `https://pdfbro.me/${tool.slug}`,
     type: 'website',
     siteName: 'PDF Bro',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Rotate PDF pages online free. Fix, flip, and organize PDF page orientation. Best PDF rotation tool for business, school, and personal use. Find PDF tools for any document task.",
   },
   robots: {
     index: true,

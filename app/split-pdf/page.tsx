@@ -11,14 +11,14 @@ const tool = seoContent.tools.splitPdf;
 
 export const metadata: Metadata = {
   title: tool.metaTitle,
-  description: tool.metaDescription,
-  keywords: "split PDF online, extract PDF pages, separate PDF, PDF splitter free, divide PDF, extract pages from PDF",
+  description: "Split PDF files online free. Extract, separate, and organize PDF pages. Best PDF splitter for business, school, and personal use. Find PDF tools for any document task.",
+  keywords: "split PDF, extract PDF pages, separate PDF, PDF splitter, PDF tools, online PDF tools, document management, business PDF, school PDF, personal PDF, free PDF tools, PDF organization",
   alternates: {
     canonical: `https://pdfbro.me/${tool.slug}`,
   },
   openGraph: {
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Split PDF files online free. Extract, separate, and organize PDF pages. Best PDF splitter for business, school, and personal use. Find PDF tools for any document task.",
     url: `https://pdfbro.me/${tool.slug}`,
     type: 'website',
     siteName: 'PDF Bro',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Split PDF files online free. Extract, separate, and organize PDF pages. Best PDF splitter for business, school, and personal use. Find PDF tools for any document task.",
   },
   robots: {
     index: true,

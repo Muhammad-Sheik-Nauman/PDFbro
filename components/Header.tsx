@@ -86,7 +86,7 @@ export default function Header() {
 
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex items-center gap-1 px-4 py-2 bg-emerald-500 text-white rounded-lg font-semibold hover:bg-emerald-600 transition-colors shadow-sm"
+            className="md:hidden flex items-center gap-1 px-4 py-2 bg-[#3895D3] text-white rounded-lg font-semibold hover:bg-[#2773A5] transition-colors shadow-sm"
             aria-label="Toggle menu"
           >
             <span>Tools</span>

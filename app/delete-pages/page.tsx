@@ -12,14 +12,14 @@ const tool = seoContent.tools.deletePages;
 
 export const metadata: Metadata = {
   title: tool.metaTitle,
-  description: tool.metaDescription,
-  keywords: "delete PDF pages, remove pages from PDF, PDF page remover, delete PDF pages online free, remove unwanted pages",
+  description: "Delete PDF pages online free. Remove, clean, and organize PDF documents. Best PDF page remover for business, school, and personal use. Find PDF tools for any document task.",
+  keywords: "delete PDF pages, remove pages from PDF, PDF page remover, PDF tools, online PDF tools, document management, business PDF, school PDF, personal PDF, free PDF tools, PDF organization",
   alternates: {
     canonical: `https://pdfbro.me/${tool.slug}`,
   },
   openGraph: {
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Delete PDF pages online free. Remove, clean, and organize PDF documents. Best PDF page remover for business, school, and personal use. Find PDF tools for any document task.",
     url: `https://pdfbro.me/${tool.slug}`,
     type: 'website',
     siteName: 'PDF Bro',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: tool.metaTitle,
-    description: tool.metaDescription,
+    description: "Delete PDF pages online free. Remove, clean, and organize PDF documents. Best PDF page remover for business, school, and personal use. Find PDF tools for any document task.",
   },
   robots: {
     index: true,
