@@ -31,8 +31,12 @@ export default function RotatePdfConverter() {
         return;
       }
 
-      if (selectedFile.size > 10 * 1024 * 1024) {
-        setError('File size must be less than 10MB');
+      if (selectedFile.size > 100 * 1024 * 1024) {
+        setError('File size must be less than 100MB');
+        // Show toast or notification here
+        if (typeof window !== 'undefined') {
+          window.alert('File size exceeds 100MB. Please try a smaller file or use "Put Later" option.');
+        }
         return;
       }
 
@@ -188,7 +192,7 @@ export default function RotatePdfConverter() {
                 Choose File
               </Button>
               <p className="text-xs text-gray-500 mt-4">
-                PDF files only • Maximum file size: 10MB
+                PDF files only • Maximum file size: 100MB
               </p>
               <input
                 ref={fileInputRef}

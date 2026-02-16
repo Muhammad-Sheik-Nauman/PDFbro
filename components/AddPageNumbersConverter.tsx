@@ -17,36 +17,46 @@ export default function AddPageNumbersConverter() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = e.target.files?.[0];
-    if (selectedFile) {
-      if (selectedFile.type !== 'application/pdf') {
-        setError('Please select a PDF file');
-        return;
-      }
-
-      if (selectedFile.size > 10 * 1024 * 1024) {
-        setError('File size must be less than 10MB');
-        return;
-      }
-
-      setFile(selectedFile);
-      setError(null);
-      setProcessed(false);
-      setPdfUrl(null);
-      
-      // Get total pages
-      const reader = new FileReader();
-      reader.onload = async (e) => {
-        try {
-          const { PDFDocument } = await import('pdf-lib');
-          const arrayBuffer = e.target?.result as ArrayBuffer;
-          const pdfDoc = await PDFDocument.load(arrayBuffer);
-          setTotalPages(pdfDoc.getPageCount());
-        } catch (err) {
-          console.error('Failed to load PDF:', err);
+    const files = e.target.files;
+    if (files) {
+      if (files.length > 100) {
+        setError('You can upload up to 100 PDF files at once.');
+        if (typeof window !== 'undefined') {
+          window.alert('You can upload up to 100 PDF files at once. Please try fewer files or use "Put Later" option.');
         }
-      };
-      reader.readAsArrayBuffer(selectedFile);
+        return;
+      }
+      const selectedFile = files[0];
+      if (selectedFile) {
+        if (selectedFile.type !== 'application/pdf') {
+          setError('Please select a PDF file');
+          return;
+        }
+        if (selectedFile.size > 100 * 1024 * 1024) {
+          setError('File size must be less than 100MB');
+          if (typeof window !== 'undefined') {
+            window.alert('File size exceeds 100MB. Please try a smaller file or use "Put Later" option.');
+          }
+          return;
+        }
+        setFile(selectedFile);
+        setError(null);
+        setProcessed(false);
+        setPdfUrl(null);
+        // Get total pages
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+          try {
+            const { PDFDocument } = await import('pdf-lib');
+            const arrayBuffer = e.target?.result as ArrayBuffer;
+            const pdfDoc = await PDFDocument.load(arrayBuffer);
+            setTotalPages(pdfDoc.getPageCount());
+          } catch (err) {
+            console.error('Failed to load PDF:', err);
+          }
+        };
+        reader.readAsArrayBuffer(selectedFile);
+      }
     }
   };
 
@@ -184,7 +194,7 @@ export default function AddPageNumbersConverter() {
                 Choose File
               </Button>
               <p className="text-xs text-gray-500 mt-4">
-                PDF files only • Maximum file size: 10MB
+                PDF files only • Maximum file size: 100MB • Maximum 100 files
               </p>
               <input
                 ref={fileInputRef}

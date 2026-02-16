@@ -26,10 +26,14 @@ export default function MergePdfConverter() {
         setError('Only PDF files are allowed');
         return false;
       }
-      if (file.size > 10 * 1024 * 1024) {
-        setError('Each file must be less than 10MB');
-        return false;
-      }
+        if (file.size > 100 * 1024 * 1024) {
+          setError('Each file must be less than 100MB');
+          // Show toast or notification here
+          if (typeof window !== 'undefined') {
+            window.alert('File size exceeds 100MB. Please try a smaller file or use "Put Later" option.');
+          }
+          return false;
+        }
       return true;
     });
 
@@ -161,7 +165,7 @@ export default function MergePdfConverter() {
                 Choose Files
               </Button>
               <p className="text-xs text-gray-500 mt-4">
-                PDF files only • Maximum file size: 10MB per file
+                PDF files only • Maximum file size: 100MB per file
               </p>
               <input
                 ref={fileInputRef}

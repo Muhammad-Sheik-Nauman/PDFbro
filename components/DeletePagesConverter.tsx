@@ -56,10 +56,14 @@ export default function DeletePagesConverter() {
     }
 
     // Validate file size (10MB)
-    if (selectedFile.size > 10 * 1024 * 1024) {
-      setError("File size must be less than 10MB");
-      return;
-    }
+      if (selectedFile.size > 100 * 1024 * 1024) {
+        setError("File size must be less than 100MB");
+        // Show toast or notification here
+        if (typeof window !== 'undefined') {
+          window.alert('File size exceeds 100MB. Please try a smaller file or use "Put Later" option.');
+        }
+        return;
+      }
 
     setFile(selectedFile);
     

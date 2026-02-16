@@ -57,7 +57,7 @@ export default function ToolPageTemplate({ tool, relatedTools }: ToolPageProps) 
                     Choose File
                   </Button>
                   <p className="text-xs text-gray-500 mt-4">
-                    Maximum file size: 10MB
+                    Maximum file size: 100MB
                   </p>
                 </div>
               </CardContent>
